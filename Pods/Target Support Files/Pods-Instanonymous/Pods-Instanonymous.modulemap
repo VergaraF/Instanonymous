@@ -1,0 +1,6 @@
+framework module Pods_Instanonymous {
+  umbrella header "Pods-Instanonymous-umbrella.h"
+
+  export *
+  module * { export * }
+}
