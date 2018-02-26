@@ -13,6 +13,7 @@
 		1B4B21FF204221490080409B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4B21FE204221490080409B /* Assets.xcassets */; };
 		1B4B2202204221490080409B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4B2200204221490080409B /* LaunchScreen.storyboard */; };
 		1B4B2210204250B30080409B /* InstAnonymous.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B4B220F204250B20080409B /* InstAnonymous.png */; };
+		1B4B2212204393330080409B /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B4B2211204393330080409B /* search.png */; };
 		95F560231F3623EE35FA1302 /* Pods_Instanonymous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C79F17A05EBE72BDDC1677 /* Pods_Instanonymous.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		1B4B2201204221490080409B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B4B2203204221490080409B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B4B220F204250B20080409B /* InstAnonymous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InstAnonymous.png; sourceTree = "<group>"; };
+		1B4B2211204393330080409B /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		677210081E70F1316B606CA1 /* Pods-Instanonymous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instanonymous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instanonymous/Pods-Instanonymous.release.xcconfig"; sourceTree = "<group>"; };
 		A7C79F17A05EBE72BDDC1677 /* Pods_Instanonymous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instanonymous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,6 +67,7 @@
 			children = (
 				1B4B21F7204221490080409B /* AppDelegate.swift */,
 				1B4B220F204250B20080409B /* InstAnonymous.png */,
+				1B4B2211204393330080409B /* search.png */,
 				1B4B21F9204221490080409B /* ViewController.swift */,
 				1B4B21FB204221490080409B /* Main.storyboard */,
 				1B4B21FE204221490080409B /* Assets.xcassets */,
@@ -153,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4B2212204393330080409B /* search.png in Resources */,
 				1B4B2202204221490080409B /* LaunchScreen.storyboard in Resources */,
 				1B4B21FF204221490080409B /* Assets.xcassets in Resources */,
 				1B4B21FD204221490080409B /* Main.storyboard in Resources */,

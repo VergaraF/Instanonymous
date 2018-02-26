@@ -40,13 +40,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7T-Ma-RsR">
-                                <rect key="frame" x="142.5" y="401" width="90" height="71"/>
+                                <rect key="frame" x="142.5" y="401" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="Owa-St-HQH"/>
-                                    <constraint firstAttribute="height" constant="71" id="XT5-GO-XGr"/>
+                                    <constraint firstAttribute="height" constant="90" id="XT5-GO-XGr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
-                                <state key="normal" title="Go"/>
+                                <state key="normal" backgroundImage="search.png"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,7 +65,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kJ0-zM-hKc"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="6sV-Z6-ZKE"/>
+                    <navigationItem key="navigationItem" title="Home" id="6sV-Z6-ZKE">
+                        <barButtonItem key="rightBarButtonItem" title="Info" style="done" id="LwH-Dt-6WL"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hF0-U1-T3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,7 +80,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XCP-7z-WJg">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.072866583229920859" green="0.072514570750549262" blue="0.073218595709292456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="26"/>
                             <color key="textColor" red="0.86703525437278495" green="0.86284667826470385" blue="0.87122383048086605" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -93,4 +95,7 @@
             <point key="canvasLocation" x="-166" y="-143"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="search.png" width="256" height="256"/>
+    </resources>
 </document>
