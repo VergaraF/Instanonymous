@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nfI-dV-jiR">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,48 +14,54 @@
             <objects>
                 <viewController id="1gE-n4-TOE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xZ8-k7-Zww">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter exact username:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsY-BW-AW2">
-                                <rect key="frame" x="91.333333333333329" y="161" width="193.33333333333337" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter exact username:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsY-BW-AW2">
+                                <rect key="frame" x="16" y="113" width="343" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CpB-ja-MKr">
-                                <rect key="frame" x="16" y="200.66666666666666" width="343" height="30"/>
+                                <rect key="frame" x="16" y="152.5" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="fqT-r0-4dc"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eax-M0-v27">
-                                <rect key="frame" x="16" y="258.66666666666669" width="343" height="182.66666666666669"/>
+                                <rect key="frame" x="16" y="210.5" width="343" height="172"/>
                                 <string key="text">We are not affiliated with Instagram in any form. We do not host any of the Instagram Stories on this mobile app nor the backend that serves this iOS app. All rights belong to their respective owners and Instagram. We encourage our users to retrieve Instagram Stories responsibly. If you do not want to appear here, or anywhere for that matter, set your account private.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.64263880510015536" green="0.042049010593816175" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7T-Ma-RsR">
-                                <rect key="frame" x="142" y="449" width="90" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7T-Ma-RsR">
+                                <rect key="frame" x="142.5" y="401" width="90" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Owa-St-HQH"/>
+                                    <constraint firstAttribute="height" constant="71" id="XT5-GO-XGr"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                 <state key="normal" title="Go"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="VsY-BW-AW2" firstAttribute="centerX" secondItem="xZ8-k7-Zww" secondAttribute="centerX" id="Afl-FE-8Cz"/>
                             <constraint firstItem="eax-M0-v27" firstAttribute="top" secondItem="CpB-ja-MKr" secondAttribute="bottom" constant="28" id="FAw-VQ-7Cf"/>
                             <constraint firstItem="CpB-ja-MKr" firstAttribute="leading" secondItem="kJ0-zM-hKc" secondAttribute="leading" constant="16" id="Imw-EV-sjT"/>
                             <constraint firstItem="kJ0-zM-hKc" firstAttribute="trailing" secondItem="eax-M0-v27" secondAttribute="trailing" constant="16" id="VXB-Gq-cmZ"/>
+                            <constraint firstItem="VsY-BW-AW2" firstAttribute="top" secondItem="kJ0-zM-hKc" secondAttribute="top" constant="49" id="WBx-TK-Lz3"/>
+                            <constraint firstItem="VsY-BW-AW2" firstAttribute="leading" secondItem="kJ0-zM-hKc" secondAttribute="leading" constant="16" id="WHm-Vu-ueE"/>
+                            <constraint firstItem="kJ0-zM-hKc" firstAttribute="trailing" secondItem="VsY-BW-AW2" secondAttribute="trailing" constant="16" id="WUx-Mk-CX5"/>
+                            <constraint firstItem="u7T-Ma-RsR" firstAttribute="top" secondItem="eax-M0-v27" secondAttribute="bottom" constant="18.329999999999998" id="bPz-Zk-Mif"/>
                             <constraint firstItem="CpB-ja-MKr" firstAttribute="top" secondItem="VsY-BW-AW2" secondAttribute="bottom" constant="15.67" id="fg3-5V-XR6"/>
                             <constraint firstItem="kJ0-zM-hKc" firstAttribute="trailing" secondItem="CpB-ja-MKr" secondAttribute="trailing" constant="16" id="fov-M7-qfW"/>
-                            <constraint firstItem="VsY-BW-AW2" firstAttribute="top" secondItem="kJ0-zM-hKc" secondAttribute="top" constant="73" id="nhG-mw-Ot9"/>
                             <constraint firstItem="eax-M0-v27" firstAttribute="leading" secondItem="kJ0-zM-hKc" secondAttribute="leading" constant="16" id="sq2-J1-L5y"/>
+                            <constraint firstItem="u7T-Ma-RsR" firstAttribute="centerX" secondItem="xZ8-k7-Zww" secondAttribute="centerX" id="x8s-ld-RaH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kJ0-zM-hKc"/>
                     </view>
@@ -63,14 +69,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hF0-U1-T3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="660" y="-143.3497536945813"/>
+            <point key="canvasLocation" x="660" y="-144.08866995073893"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h0g-rJ-LyM">
             <objects>
                 <navigationController id="nfI-dV-jiR" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XCP-7z-WJg">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.072866583229920859" green="0.072514570750549262" blue="0.073218595709292456" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
