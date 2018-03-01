@@ -7,5 +7,6 @@ target 'Instanonymous' do
 
   # Pods for Instanonymous
 pod ‘Alamofire’
+pod 'Google-Mobile-Ads-SDK'
 
 end

@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,12 +13,15 @@
         <array key="Helvetica.ttc">
             <string>Helvetica-Bold</string>
         </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Home-->
         <scene sceneID="dXN-ig-GPv">
             <objects>
-                <viewController id="1gE-n4-TOE" sceneMemberID="viewController">
+                <viewController id="1gE-n4-TOE" customClass="ViewController" customModule="Instanonymous" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xZ8-k7-Zww">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,6 +56,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                 <state key="normal" backgroundImage="search.png"/>
+                                <connections>
+                                    <action selector="searchBtn:" destination="1gE-n4-TOE" eventType="touchUpInside" id="JKT-sw-cmG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -77,6 +84,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="usernameField" destination="CpB-ja-MKr" id="qG6-qi-NDJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hF0-U1-T3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,7 +115,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bR5-kk-WkV">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do use:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZe-hb-saY">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to use:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZe-hb-saY">
                                                 <rect key="frame" x="8" y="8" width="102" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="1Vx-jK-ktK"/>
@@ -116,10 +126,26 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When to use:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6l-Jm-Eco">
+                                                <rect key="frame" x="8" y="155" width="128" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="128" id="WTf-XZ-Zkc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sA9-6E-ul6">
-                                                <rect key="frame" x="16" y="28" width="351" height="122"/>
+                                                <rect key="frame" x="16" y="28" width="351" height="119"/>
                                                 <string key="text">Using Instanonymous is very simple. All you need is the username of the Instagram Story you want to check. Then clic on our binoculars to see everything. Be aware that the provided account (username) needs to be public. We cannot see private stories!</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yCh-fB-JPQ">
+                                                <rect key="frame" x="16" y="182.66666666666669" width="351" height="99.333333333333314"/>
+                                                <string key="text">You could use it to watch specific stories indefinetely. Maybe you want to also save any story from anyone because it was cool!... or you just want to watch IG Stories anonymously. Instanonymous got you.</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -127,11 +153,16 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="sA9-6E-ul6" firstAttribute="top" secondItem="bR5-kk-WkV" secondAttribute="top" constant="28" id="2sB-PS-BcY"/>
+                                            <constraint firstItem="D6l-Jm-Eco" firstAttribute="leading" secondItem="bR5-kk-WkV" secondAttribute="leading" constant="8" id="3jP-2T-aEM"/>
                                             <constraint firstAttribute="trailing" secondItem="sA9-6E-ul6" secondAttribute="trailing" constant="8" id="7qN-xT-Tx6"/>
                                             <constraint firstItem="sA9-6E-ul6" firstAttribute="leading" secondItem="bR5-kk-WkV" secondAttribute="leading" constant="16" id="Apq-V4-2lF"/>
                                             <constraint firstItem="UZe-hb-saY" firstAttribute="leading" secondItem="bR5-kk-WkV" secondAttribute="leading" constant="8" id="QIs-Sn-DHb"/>
+                                            <constraint firstItem="D6l-Jm-Eco" firstAttribute="top" secondItem="sA9-6E-ul6" secondAttribute="bottom" constant="8" id="aoP-vP-qVk"/>
+                                            <constraint firstAttribute="trailing" secondItem="yCh-fB-JPQ" secondAttribute="trailing" constant="8" id="cDl-Ss-7HI"/>
                                             <constraint firstAttribute="height" constant="1500" id="jk8-6I-A7c"/>
+                                            <constraint firstItem="yCh-fB-JPQ" firstAttribute="top" secondItem="D6l-Jm-Eco" secondAttribute="bottom" constant="7.3300000000000001" id="jmK-4j-AKd"/>
                                             <constraint firstItem="UZe-hb-saY" firstAttribute="top" secondItem="bR5-kk-WkV" secondAttribute="top" constant="8" id="rU7-e8-gkm"/>
+                                            <constraint firstItem="yCh-fB-JPQ" firstAttribute="leading" secondItem="bR5-kk-WkV" secondAttribute="leading" constant="16" id="xt6-6N-nMh"/>
                                         </constraints>
                                     </view>
                                 </subviews>
