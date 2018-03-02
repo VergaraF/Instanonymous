@@ -20,8 +20,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.rootViewController = self
         
         addBannerViewToView(bannerView)
+        
+        
     }
 
     @IBAction func searchBtn(_ sender: Any) {
